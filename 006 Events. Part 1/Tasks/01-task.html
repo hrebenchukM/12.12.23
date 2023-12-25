@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 01</title>
+</head>
+
+<body>
+
+    <button id="testBtn">Test Button3</button>
+   
+
+   
+    <button onclick="alert('Hello world(1) ')">
+        Test Button 1
+    </button>
+
+
+    <button onclick="showMessage()">
+        Test Button 2
+    </button>
+
+    <script>
+        /*
+        Задание:
+        Добавьте для кнопки testBtn обработчик на событие click.
+        Обработчик должен выводить на экран сообщение Hello world.
+        Добавьте обработчик тремя разными способами.
+        */
+
+//2
+function showMessage() {
+            alert("Hello world(2)");
+        }
+
+//3  
+       let button = document.querySelector("#testBtn");
+       button.onclick = showMessage3;
+
+        function showMessage3() {
+            alert("Hello world(3)");
+        }
+
+    
+    </script>
+</body>
+
+</html>
